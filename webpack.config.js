@@ -23,13 +23,13 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'Hot module Replacement'
+			title: 'Caching'
 		}),
 		new webpack.NamedModulesPlugin(),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
-		filename:'[name].bundle.js',
+		filename: '[name].[hash].js',
 		path:path.resolve(__dirname,'dist'),
 		publicPath: '/'
 	}
