@@ -5,7 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		app: './src/index.js'
+		app: './src/ceshi/index.js'
 	},
 	devtool: 'inline-source-map',
 	devServer: {
@@ -21,16 +21,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new CleanWebpackPlugin(),
-		new HtmlWebpackPlugin({
-			title: 'Caching'
-		}),
 		new webpack.NamedModulesPlugin(),
 		new webpack.HotModuleReplacementPlugin()
 	],
 	output: {
-		filename: '[name].[hash].js',
+		filename: 'bundle.js',
 		path:path.resolve(__dirname,'dist'),
-		publicPath: '/'
 	}
 };
