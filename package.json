@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
-    "start": "webpack-dev-server --open",
-    "build": "rm -f dist/* && npx webpack --config ./webpack.config.js --mode production",
+    "start": "rm -f dist/* && webpack-dev-server --open",
+    "build": "rm -f dist/* && npx webpack --config ./webpack.prod.config.js --mode production",
     "stark": "npx thunder-stark-plugin-upload ./dist/thunder-state.json"
   },
   "keywords": [],

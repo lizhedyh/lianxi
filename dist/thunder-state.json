@@ -4,13 +4,13 @@
     {
       "name": "app",
       "type": "js",
-      "filename": "bundle.89073150bc10001472ab.js",
-      "checksum": 3001035626
+      "filename": "bundle.bfaf5ba6049390438f24.js",
+      "checksum": 1855025390
     }
   ],
   "compilation": {
-    "hash": "89073150bc10001472ab",
-    "fullHash": "89073150bc10001472ab86e8a7c4d143"
+    "hash": "bfaf5ba6049390438f24",
+    "fullHash": "bfaf5ba6049390438f24a065668416e3"
   },
   "project": "3f03edb6",
   "cacheAge": 0,

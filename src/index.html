@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ceshi</title>
+    <script>
+        "use strict";!function(){var i=0<arguments.length&&void 0!==arguments[0]?arguments[0]:"_Owl_",n=window;n[i]||(n[i]={isRunning:!1,isReady:!1,preTasks:[],dataSet:[],use:function(i,t){this.isReady&&n.Owl&&n.Owl[i](t),this.preTasks.push({api:i,data:[t]})},add:function(i){this.dataSet.push(i)},run:function(){var t=this;if(!this.isRunning){this.isRunning=!0;var i=n.onerror;n.onerror=function(){this.isReady||this.add({type:"jsError",data:arguments}),i&&i.apply(n,arguments)}.bind(this),(n.addEventListener||n.attachEvent)("error",function(i){t.isReady||t.add({type:"resError",data:[i]})},!0)}}},n[i].run())}();
+    </script>
+    <script crossorigin="anonymous" src="//s1.51ping.com/app/owl/static/owl_1.8.11.js"></script>    
+    <script>
+      Owl.start({
+        project: 'lizhe',
+        pageUrl: 'http://localhost:8080/index.html',
+        devMode: true, // 测试环境需要添加这个参数
+        resource:{
+          sampleApi:1 //错误上报比例
+        },
+        autoCatch:{
+          console:true //默认false, 监控console.error错误, 错误集中在consoleError分类下
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div>ceshi</div>
+  </body>
+</html>
