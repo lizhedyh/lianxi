@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "resources": [
+    {
+      "name": "app",
+      "type": "js",
+      "filename": "bundle.js",
+      "checksum": 2460159105
+    }
+  ],
+  "compilation": {
+    "hash": "db26663ae97b05bd20c1",
+    "fullHash": "db26663ae97b05bd20c19d126fdc8062"
+  },
+  "project": "3f03edb6",
+  "cacheAge": 0,
+  "StarkOptions": {
+    "projectName": "3f03edb6",
+    "dist": "dist",
+    "uploadBlacklist": [
+      "index\\.html"
+    ]
+  },
+  "outputOptions": {
+    "publicPath": "https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:3f03edb6/",
+    "crossOriginLoading": false,
+    "chunkLoadTimeout": 120000,
+    "fallbackCDN": "https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:3f03edb6/",
+    "checksum": true,
+    "library": "",
+    "hotUpdateFunction": "webpackHotUpdate",
+    "jsonpFunction": "webpackJsonp",
+    "thunder": {
+      "filename": "thunder-tiny-2.3.7.js",
+      "attrs": {},
+      "checksum": 180202958
+    }
+  }
+}

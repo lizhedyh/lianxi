@@ -1,25 +1,28 @@
 {
-  "name": "lizhe",
+  "name": "lizhe_stark",
   "sideEffects": false,
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open",
     "server": "node server.js",
-    "build": "webpack"
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
+    "stark": "npx thunder-stark-plugin-upload ./dist/thunder-state.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mtfe/thunder": "^2.3.7",
     "gulp-cli": "^2.2.0",
     "koa": "^2.7.0",
     "koa-route": "^3.2.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "@mfe/stark-warmup": "^0.2.7",
     "babel-core": "^6.26.3",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.1.0",

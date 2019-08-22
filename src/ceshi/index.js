@@ -3,7 +3,7 @@ function component() {
   var  element = document.createElement('pre');
   
   element.innerHTML = [
-    'Hello webpack!'
+    'Hi Stark!'
   ].join('\n\n');
   return element;
 }
