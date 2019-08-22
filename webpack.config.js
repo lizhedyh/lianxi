@@ -44,7 +44,7 @@ module.exports = {
 		  })
 	],
 	output: {
-		filename: 'bundle.js',
+		filename: 'bundle.[hash].js',
 		path: path.resolve(__dirname, 'dist'),
 		// 注意，682622b1需要更换为你在Stark管理界面中注册的项目的唯一标识符
 		publicPath: 'https://s3plus.meituan.net/v1/mss_e2821d7f0cfe4ac1bf9202ecf9590e67/cdn-prod/file:3f03edb6/'
