@@ -16,10 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "@mtfe/thunder": "^2.3.7",
+    "fs": "0.0.1-security",
     "gulp-cli": "^2.2.0",
     "koa": "^2.7.0",
     "koa-route": "^3.2.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "mss-sdk": "^2.0.0"
   },
   "devDependencies": {
     "@mfe/stark-warmup": "^0.2.7",
