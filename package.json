@@ -21,9 +21,7 @@
     "gulp-cli": "^2.2.0",
     "koa": "^2.7.0",
     "koa-route": "^3.2.0",
-    "lodash": "^4.17.15",
-    "mos-mss": "^1.1.1",
-    "mss-sdk": "^2.0.0"
+    "mos-mss": "^1.1.1"
   },
   "devDependencies": {
     "@mfe/stark-warmup": "^0.2.7",
