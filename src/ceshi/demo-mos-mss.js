@@ -1,4 +1,5 @@
 var MSS = require('mos-mss');
+var path = require('path');
 
 var client = new MSS({
     accessKeyId: 'd7c6b34b7fc043a2b27a252cb21c42e8', /* required */
@@ -7,7 +8,18 @@ var client = new MSS({
     bucket: 'canary-ceshi'
 });
 
-var result = client.getBucketACL('canary-ceshi');
-result.then(function (res) {
-    console.log(res);
+var result = client.getObject('style.css', path.join(__dirname, './style.css'));
+
+result.then(function(data) {
+    console.log(data);
 });
+// var filePath = path.join(__dirname, './style.css');
+// var result = client.putObject('style.css', filePath,{
+//     headers:{
+//         'Cache-Control': 'max-age=31536000'
+//     }
+// });
+ 
+// result.then(function (res) {
+//     console.log(res);
+// });
