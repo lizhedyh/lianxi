@@ -5,11 +5,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server.js",
-    "start": "rm -f dist/* && webpack-dev-server --open",
-    "build": "rm -f dist/* && npx webpack --config ./webpack.prod.config.js --mode production",
-    "stark": "npx thunder-stark-plugin-upload ./dist/thunder-state.json"
+    "eslint": "eslint src --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -25,15 +21,19 @@
   },
   "devDependencies": {
     "@mfe/stark-warmup": "^0.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
     "babel-core": "^6.26.3",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.1.0",
     "csv-loader": "^3.0.2",
+    "eslint": "^6.7.1",
     "express": "^4.17.1",
     "file-loader": "^4.1.0",
     "gulp": "^4.0.2",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
+    "typescript": "^3.7.2",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-middleware": "^3.7.0",
