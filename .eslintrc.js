@@ -4,9 +4,7 @@ module.exports = {
         'es6': true,
         'node': true
     },
-    'extends': [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/eslint-recommended'
+    'extends': [ 
     ],
     'globals': {
         'Atomics': 'readonly',
@@ -18,24 +16,10 @@ module.exports = {
         'sourceType': 'module'
     },
     'plugins': [
-        '@typescript-eslint'
+        '@typescript-eslint',
+        '@myfe/eslint-plugin-myfe',
     ],
     'rules': {
-        'indent': [
-            'error',
-            4
-        ],
-        'linebreak-style': [
-            'error',
-            'unix'
-        ],
-        'quotes': [
-            'error',
-            'single'
-        ],
-        'semi': [
-            'error',
-            'always'
-        ]
-    }
+        '@myfe/eslint-plugin-myfe/class-name-cap': 'error',
+    },
 };
