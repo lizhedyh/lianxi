@@ -4,8 +4,8 @@ module.exports = {
         'es6': true,
         'node': true
     },
-    'extends': [ 
-    ],
+    'root': true,
+    'extends': [ 'plugin:@myfe/eslint-plugin-myfe/koroRule' ],
     'globals': {
         'Atomics': 'readonly',
         'SharedArrayBuffer': 'readonly'
@@ -17,9 +17,7 @@ module.exports = {
     },
     'plugins': [
         '@typescript-eslint',
-        '@myfe/eslint-plugin-myfe',
     ],
     'rules': {
-        '@myfe/eslint-plugin-myfe/class-name-cap': 'error',
     },
 };

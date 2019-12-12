@@ -27,7 +27,7 @@
   "devDependencies": {
     "@mfe/stark-warmup": "^0.2.7",
     "@myfe/eslint-config-maoyan": "^2.0.0",
-    "@myfe/eslint-plugin-myfe": "0.0.2",
+    "@myfe/eslint-plugin-myfe": "0.0.4",
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
     "babel-core": "^6.26.3",
