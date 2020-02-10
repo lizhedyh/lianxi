@@ -6,7 +6,7 @@ const ThunderPlugin = require('@mtfe/thunder/plugin');
 
 module.exports = {
 	entry: {
-		app: './src/ceshi/index.js'
+		app: './src/index.js'
 	},
 	devtool: 'inline-source-map',
 	module: {
@@ -14,7 +14,11 @@ module.exports = {
 			{
 				test:/\.css$/,
 				use:['style-loader','css-loader']
-			}
+      },
+      {
+        test:/\.(png|svg|jpg|gif)$/,
+        use:['file-loader'],
+      }
 		]
 	},
 	plugins: [
